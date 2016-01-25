@@ -1,5 +1,5 @@
 FROM python:2.7
-ADD docker-hook .
+ADD docker-hook.py .
 ENTRYPOINT ./docker-hook.py
 
 # install dependencies
