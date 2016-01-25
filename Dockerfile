@@ -5,5 +5,6 @@ ENTRYPOINT ./docker-hook
 # install dependencies
 RUN apt-get -qq update
 RUN apt-get install -y python python-pip
+RUN pip install requests
 
 CMD python docker-hook.py -t token -c sh ./deploy.sh
